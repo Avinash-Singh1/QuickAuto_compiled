@@ -6,7 +6,7 @@ const pool = mysql.createPool({
     user: process.env.USER,
     password: process.env.PASSWORD,
     database: process.env.DATABASE,
-    connectionLimit: 10
+    connectionLimit: 10000 
 });
 
 console.log("Database pool created.");
