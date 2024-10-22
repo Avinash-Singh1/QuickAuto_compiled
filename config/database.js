@@ -12,7 +12,7 @@ const pool = mysql.createPool({
     waitForConnections: true,
     queueLimit: 0,
     enableKeepAlive: true,
-    reconnect: true,  // Automatically try to reconnect
+  // reconnect: true,  // Automatically try to reconnect
 });
 
 pool.on('error', (err) => {
